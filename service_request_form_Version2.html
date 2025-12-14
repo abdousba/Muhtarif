@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استوديو المحترف - طلب خدمة</title>
+    <!-- تحميل Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- خط Cairo لتحسين قراءة اللغة العربية -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #ffffff; /* أبيض ناصع */
+        }
+        /* إطار بسيط للعناصر المميزة */
+        .card-border {
+            border: 1px solid #e5e5e5; /* رمادي فاتح جداً للحدود */
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-900">
+
+    <!-- شريط التنقل (Navigation) -->
+    <header class="bg-white card-border border-b sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-black uppercase tracking-wider text-gray-900">
+                استوديو المحترف
+            </h1>
+            <a href="#request-form" class="text-sm font-semibold border-2 border-gray-900 text-gray-900 px-5 py-2 rounded-full hover:bg-gray-100 transition duration-300 shadow-md">
+                تقديم طلب
+            </a>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) - أبيض وأسود -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16">
+        
+        <div class="text-center mb-16">
+            <h2 class="text-6xl font-extrabold mb-4">
+                دعنا نحول فكرتك إلى واقع
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                استوديو المحترف يقدم خدمات تصميم وإنتاج رقمي متقدمة لرفع جودة مشاريعكم. تصفح خدماتنا واملأ النموذج أدناه لبدء العمل.
+            </p>
+        </div>
+
+        <!-- قسم الخدمات (Services Section) -->
+        <section id="services" class="mb-20">
+            <h3 class="text-4xl font-bold mb-8 text-center border-b pb-4">
+                خدماتنا
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- الخدمة 1: تغيير ديكور صور المنتج -->
+                <div class="p-6 card-border rounded-xl shadow-lg bg-gray-50 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-2xl font-bold text-gray-900 ml-2">1/</span>
+                        <h4 class="text-xl font-bold text-gray-900">تغيير ديكور صور المنتج</h4>
+                    </div>
+                    <ul class="text-gray-700 list-disc pr-5 space-y-1 text-sm">
+                        <li>تحويل صور المنتجات إلى شكل احترافي جاهز للنشر.</li>
+                        <li>تحسين الإضاءة وإزالة العيوب.</li>
+                        <li>تغيير الخلفية وتصميم ديكور واقعي.</li>
+                        <li>رفع جودة الصورة (Upscaling).</li>
+                    </ul>
+                </div>
+                
+                <!-- الخدمة 2: تصميم باترونات الخياطة -->
+                <div class="p-6 card-border rounded-xl shadow-lg bg-gray-50 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-2xl font-bold text-gray-900 ml-2">2/</span>
+                        <h4 class="text-xl font-bold text-gray-900">تصميم باترونات الخياطة</h4>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        تصميم باترونات دقيقة وجاهزة للتنفيذ لأنواع مختلفة من الملابس والأزياء، مع ضمان التوافق مع متطلبات الإنتاج.
+                    </p>
+                </div>
+
+                <!-- الخدمة 3: تصميم كيك ديزاين -->
+                <div class="p-6 card-border rounded-xl shadow-lg bg-gray-50 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-2xl font-bold text-gray-900 ml-2">3/</span>
+                        <h4 class="text-xl font-bold text-gray-900">تصميم كيك ديزاين (Cake Design)</h4>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        تصميم مرئيات للكيك ثلاثية الأبعاد أو ثنائية الأبعاد، بما في ذلك الأفكار الإبداعية وتفاصيل التزيين لإنتاج تصميم فريد ومناسب للمناسبات.
+                    </p>
+                </div>
+
+                <!-- الخدمة 4: استشارات المشروع -->
+                <div class="p-6 card-border rounded-xl shadow-lg bg-gray-50 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-2xl font-bold text-gray-900 ml-2">4/</span>
+                        <h4 class="text-xl font-bold text-gray-900">استشارات تخص مشروعك</h4>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        تقديم استشارات متخصصة تشمل تحليل حسابات وإحصائيات المشروع لمساعدتك في اتخاذ قرارات مدروسة وتحقيق النمو.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- قسم نموذج الطلب (Request Form Section) -->
+        <section id="request-form" class="mt-16 bg-gray-50 p-8 md:p-12 rounded-2xl shadow-2xl card-border">
+            <h3 class="text-4xl font-extrabold mb-6 text-center">
+                نموذج تقديم طلب جديد
+            </h3>
+            <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto" id="form-intro-text">
+                يرجى ملء النموذج بالكامل لضمان أفضل فهم لمتطلبات مشروعك. سيتم توجيهك إلى الواتساب لإرسال الطلب والمرفقات.
+            </p>
+
+            <form id="order-form" class="space-y-6">
+                
+                <!-- حقل الاسم الكامل -->
+                <div>
+                    <label for="full_name" class="block text-sm font-medium text-gray-700 mb-1">الاسم الكامل</label>
+                    <input type="text" id="full_name" name="full_name" required
+                           placeholder="أدخل اسمك الكريم"
+                           class="w-full px-4 py-2 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition duration-150 bg-white">
+                </div>
+
+                <!-- حقل البريد الإلكتروني (للتأكيد/التوثيق) -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required
+                           placeholder="your.email@example.com"
+                           class="w-full px-4 py-2 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition duration-150 bg-white"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+                
+                <!-- حقل نوع الخدمة -->
+                <div>
+                    <label for="service_type" class="block text-sm font-medium text-gray-700 mb-1">اختر نوع الخدمة المطلوبة</label>
+                    <select id="service_type" name="service_type" required
+                            class="w-full px-4 py-2 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition duration-150 bg-white appearance-none pr-10">
+                        <option value="" disabled selected>-- يرجى الاختيار --</option>
+                        <option value="تغيير ديكور صور المنتج">1/ تغيير ديكور صور المنتج</option>
+                        <option value="تصميم باترونات الخياطة">2/ تصميم باترونات الخياطة</option>
+                        <option value="تصميم كيك ديزاين">3/ تصميم كيك ديزاين</option>
+                        <option value="استشارات تخص مشروعك">4/ استشارات تخص مشروعك (حسابات وإحصائيات)</option>
+                    </select>
+                </div>
+                
+                <!-- حقل تفاصيل المشروع -->
+                <div>
+                    <label for="project_details" class="block text-sm font-medium text-gray-700 mb-1">وصف تفصيلي للطلب</label>
+                    <textarea id="project_details" name="project_details" rows="5" required
+                              placeholder="يرجى وصف طلبك بدقة، بما في ذلك الأهداف، المواعيد النهائية (إن وجدت)، وأي تفاصيل تقنية أو إبداعية."
+                              class="w-full px-4 py-3 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition duration-150 bg-white resize-none"></textarea>
+                </div>
+
+                <!-- حقل تحميل المرفقات (إشعار بأن المرفقات سترسل عبر واتساب) -->
+                <div class="p-3 bg-gray-200 text-gray-700 text-sm rounded-lg border border-gray-400">
+                    <p class="font-semibold mb-1">ملاحظة بخصوص المرفقات:</p>
+                    <p>لا يمكن رفع الملفات مباشرة في هذا النموذج. يرجى تجهيز ملفاتك وسيكون بإمكانك إرسالها بسهولة بعد الضغط على زر "إرسال الطلب الآن"، حيث سيتم توجيهك إلى الواتساب.</p>
+                </div>
+
+
+                <!-- زر الإرسال -->
+                <div class="pt-6" id="submit-container">
+                    <button type="submit" id="submit-button"
+                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-bold text-white bg-gray-900 hover:bg-black transition duration-200 transform hover:scale-[1.01] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                        إرسال الطلب الآن
+                    </button>
+                </div>
+            </form>
+        </section>
+        
+        <!-- معلومات الاتصال بالواتساب -->
+        <section class="mt-16 text-center p-6 bg-gray-900 rounded-xl shadow-xl">
+            <h4 class="text-2xl font-bold text-white mb-3">هل لديك أسئلة؟ تواصل معنا مباشرة!</h4>
+            <p class="text-white text-lg mb-4">
+                للاستفسارات العاجلة أو لتفاصيل إضافية، يرجى التواصل عبر الواتساب.
+            </p>
+            
+            <a href="https://wa.me/00213673697554" target="_blank"
+               class="inline-flex items-center justify-center bg-white text-gray-900 font-extrabold py-3 px-8 rounded-full shadow-md hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                <!-- أيقونة واتساب بسيطة (SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.0003 2.00007C6.48666 2.00007 2.00033 6.4864 2.00033 12.0001C2.00033 13.7915 2.50293 15.4744 3.40033 16.9038L2.17647 21.8242C2.10301 22.1154 2.19014 22.4284 2.41724 22.6454C2.64433 22.8623 2.9734 22.9463 3.27138 22.8803L8.35821 21.8028C9.72123 22.4764 11.2917 22.8334 12.9174 22.8334C17.3888 22.8334 21.0003 19.3334 21.0003 14.8334C21.0003 10.3334 17.3888 6.8334 12.9174 6.8334C11.6669 6.8334 10.4632 7.07068 9.38042 7.50989L9.12354 7.6163L4.99965 7.6163C4.99965 6.8334 4.99965 2.00007 12.0003 2.00007Z" opacity="0"/>
+                    <path d="M12.0003 2.00007C6.48666 2.00007 2.00033 6.4864 2.00033 12.0001C2.00033 13.7915 2.50293 15.4744 3.40033 16.9038L2.17647 21.8242C2.10301 22.1154 2.19014 22.4284 2.41724 22.6454C2.64433 22.8623 2.9734 22.9463 3.27138 22.8803L8.35821 21.8028C9.72123 22.4764 11.2917 22.8334 12.9174 22.8334C17.3888 22.8334 21.0003 19.3334 21.0003 14.8334C21.0003 10.3334 17.3888 6.8334 12.9174 6.8334C11.6669 6.8334 10.4632 7.07068 9.38042 7.50989L9.12354 7.6163L4.99965 7.6163C4.99965 6.8334 4.99965 2.00007 12.0003 2.00007Z" fill="#1e1e1e"/>
+                </svg>
+                <span>واتساب: 00213673697554</span>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- التذييل (Footer) -->
+    <footer class="bg-gray-900 text-white mt-10 p-6 text-center">
+        <p class="text-sm">&copy; 2025 استوديو المحترف. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        document.getElementById('order-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // 1. جمع البيانات من النموذج
+            const fullName = document.getElementById('full_name').value;
+            const email = document.getElementById('email').value;
+            const serviceType = document.getElementById('service_type').value;
+            const projectDetails = document.getElementById('project_details').value;
+
+            // 2. بناء رسالة الواتساب
+            const whatsappMessage = `*طلب خدمة جديد من موقع استوديو المحترف*\n\n` +
+                                    `*الاسم:* ${fullName}\n` +
+                                    `*البريد الإلكتروني:* ${email}\n` +
+                                    `*الخدمة المطلوبة:* ${serviceType}\n` +
+                                    `*التفاصيل الوصفية:*\n${projectDetails}\n\n` +
+                                    `يرجى إرسال هذه الرسالة وتجهيز المرفقات لمتابعة الطلب. شكراً لكم.`;
+
+            // 3. ترميز الرسالة ل URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/213673697554?text=${encodedMessage}`; // استخدام رقم الواتساب بدون 00
+
+            // 4. تحديث الواجهة لعرض زر الإرسال عبر واتساب
+            const submitContainer = document.getElementById('submit-container');
+            const formIntroText = document.getElementById('form-intro-text');
+
+            // تحديث نص المقدمة
+            formIntroText.innerHTML = '<span class="text-green-600 font-bold text-xl">✅ تم تجهيز طلبك بنجاح!</span> يرجى الضغط على الزر أدناه لإرسال التفاصيل مباشرة عبر الواتساب.';
+            
+            // إزالة الزر القديم وإضافة رابط الواتساب الجديد
+            submitContainer.innerHTML = `
+                <a href="${whatsappUrl}" target="_blank"
+                   class="w-full flex items-center justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-bold text-white bg-green-600 hover:bg-green-700 transition duration-200 transform hover:scale-[1.01] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.0003 2.00007C6.48666 2.00007 2.00033 6.4864 2.00033 12.0001C2.00033 13.7915 2.50293 15.4744 3.40033 16.9038L2.17647 21.8242C2.10301 22.1154 2.19014 22.4284 2.41724 22.6454C2.64433 22.8623 2.9734 22.9463 3.27138 22.8803L8.35821 21.8028C9.72123 22.4764 11.2917 22.8334 12.9174 22.8334C17.3888 22.8334 21.0003 19.3334 21.0003 14.8334C21.0003 10.3334 17.3888 6.8334 12.9174 6.8334C11.6669 6.8334 10.4632 7.07068 9.38042 7.50989L9.12354 7.6163L4.99965 7.6163C4.99965 6.8334 4.99965 2.00007 12.0003 2.00007Z" fill="white"/>
+                    </svg>
+                    إرسال الطلب عبر الواتساب الآن
+                </a>
+                <p class="text-sm mt-3 text-gray-700">سيتم فتح تطبيق الواتساب الخاص بك أو النافذة الجديدة.</p>
+            `;
+            
+            // تعطيل حقول النموذج بعد الضغط على الإرسال
+            const formElements = event.target.elements;
+            for (let i = 0; i < formElements.length; i++) {
+                formElements[i].disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
